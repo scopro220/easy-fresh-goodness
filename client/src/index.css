@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mountains+of+Christmas:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #16b867;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.brand-name {
+  font-size: 3rem;
+  color: #ffffff;
+  border-bottom: 3px solid #16b867;
+}
+
+.brand-name:hover {
+  color: #ffffff;
+}
+
+.navbar {
+  font-family: "Mountains of Christmas", cursive;
+  width: 85%;
+  margin: 0 auto;
+}
+
+ul.nav {
+  display: flex !important;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-item:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:nth-child(2) a {
+  font-size: 1.95rem;
+  color: #fff;
+}
+
+.landing-page::before {
+  content: "";
+  background-image: url("./images/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.85;
+  z-index: -1;
+  position: absolute;
+  height: 1250px;
+}
+
+.landing-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 85px;
+}
+
+.landing-page .detail-card:nth-child(even) {
+  align-self: flex-end;
+}
+
+.detail-card {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  width: 45%;
+  color: #f3f3f3;
+  background-color: #e77777f2;
+  margin: 100px 150px 0;
+  padding: 20px;
+}
+
+.search {
+  padding-top: 85px;
+  display: flex;
+}
+
+.search .search-wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 25px;
+  position: fixed;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 350px;
+}
+
+.card {
+  width: 300px !important;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card > a,
+.card > a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.intolerance-wrapper {
+  display: flex;
+}
+
+.form-check-label {
+  display: block;
+}
+
+.quick-search-button {
+  text-align: center;
+}
+
+.quick-search-button img:hover {
+  cursor: pointer;
+}
+
+.quick-search,
+.search-form {
+  margin-left: 48px;
+}
+
+.quick-search-button img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.quick-search-button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.recipe-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 85px;
+  align-items: center;
+}
+
+.wrapper {
+  width: 500px;
+}
+
+.recipe-title {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.recipe-page img {
+  width: 100%;
+}
+
+.recipe-page .badge-wrapper {
+  text-align: center;
+}
+
+.badge {
+  margin: 0 2px;
+}
+
+.recipe-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.recipe-ingredients,
+.recipe-instructions,
+.recipe-nutrition {
+  margin-top: 35px;
+}
+
+.recipe-page li {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.not-found {
+  text-align: center;
+  padding-top: 125px;
+}
+
+.daily-meal-theme {
+  text-align: center;
+  padding-top: 125px;
+}
+
+.dmt-wrapper {
+  display: flex;
+  max-width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
