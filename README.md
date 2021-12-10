@@ -65,11 +65,11 @@ To run this project, you will need to add the following environment variables to
 
 ## NPM Packages
 - [react](https://reactjs.org/)
-- [bootstrap](https://nextjs.org/)
-- [reactstrap](https://tailwindcss.com/)
-- [react-router](https://postcss.org/)
-- [node](https://postcss.org/)
-- [express](https://postcss.org/)
+- [bootstrap](https://getbootstrap.com/)
+- [reactstrap](https://reactstrap.github.io/?path=/story/home-installation--page)
+- [react-router](https://reactrouter.com/)
+- [node](https://nodejs.org/en/)
+- [express](https://expressjs.com/)
 ## Screenshots
 
 Landing Page
