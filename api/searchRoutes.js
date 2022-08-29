@@ -12,7 +12,6 @@ module.exports = (app) => {
       end = end + `&${k}=${searchQuery[k]}`;
     }
     const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${keys.spoonacular_API}&number=100${end}`;
-    console.log(url)
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
