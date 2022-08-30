@@ -11,7 +11,7 @@
 
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
 
-Website: [Easy Fresh Goodness](https://easy-fresh-goodness.herokuapp.com/)
+Website: [Easy Fresh Goodness](http://easy-fresh-goodness.vercel.app/)
 
 Hosted on [Vercel](https://vercel.com/)
 ## API Reference
