@@ -5,7 +5,7 @@ const app = express();
 require("./searchRoutes")(app);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("src/build"));
+  app.use(express.static("build"));
 
   const path = require("path");
   app.get("*", (req, res) => {
