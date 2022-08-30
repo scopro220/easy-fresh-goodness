@@ -2,8 +2,6 @@ const express = require("express");
 const app = express();
 require('dotenv').config()
 const fetch = require("node-fetch");
-// const keys = require("./keys");
-
 
 app.get("/api/search", (req, res) => {
   const searchQuery = req.query;
@@ -31,15 +29,6 @@ app.get("/api/recipe/:recipeid", (req, res) => {
       res.send(data);
     });
 });
-
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("build"));
-
-//   const path = require("path");
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "src", "build", "index.html"));
-//   });
-// }
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
