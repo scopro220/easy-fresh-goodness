@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 require('dotenv').config()
 const fetch = require("node-fetch");
-const keys = require("./keys");
+// const keys = require("./keys");
 
 
 app.get("/api/search", (req, res) => {
@@ -13,7 +13,7 @@ app.get("/api/search", (req, res) => {
   for (const k in searchQuery) {
     end = end + `&${k}=${searchQuery[k]}`;
   }
-  const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${keys.spoonacular_API}&number=100${end}`;
+  const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.SPOONACULAR_API_KEY}&number=100${end}`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -24,7 +24,7 @@ app.get("/api/search", (req, res) => {
 app.get("/api/recipe/:recipeid", (req, res) => {
   const id = req.params.recipeid;
 
-  const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${keys.spoonacular_API}&includeNutrition=true`;
+  const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.SPOONACULAR_API_KEY}&includeNutrition=true`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
