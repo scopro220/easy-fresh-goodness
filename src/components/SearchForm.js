@@ -7,7 +7,10 @@ const SearchForm = ({ setSearchQueryInformation }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await fetch(`/api/search?query=${text}`)
-      .then((response) => response.json())
+      .then((response) => {
+        console.log("hit")
+        return response.json()
+      })
       .then((data) => {
         setSearchQueryInformation(data.results);
       });
