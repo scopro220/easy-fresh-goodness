@@ -13,7 +13,7 @@
 
 Website: [Easy Fresh Goodness](https://easy-fresh-goodness.herokuapp.com/)
 
-Hosted on [Heroku](https://www.heroku.com/)
+Hosted on [Vercel](https://vercel.com/)
 ## API Reference
 
 ### Get recipes
@@ -50,7 +50,7 @@ Hosted on [Heroku](https://www.heroku.com/)
 
 To run this project, you will need to add the following environment variables to your .env file set to the backend address.
 
-`spoonacular_API`
+`SPOONACULAR_API_KEY`
 
 
 ## Features
@@ -58,7 +58,7 @@ To run this project, you will need to add the following environment variables to
 - Search 
 - Quick search
 - Individual Recipe Pages
-    - Step by step iinstructions
+    - Step by step instructions
     - Nutrition
     - Ingredients
 
